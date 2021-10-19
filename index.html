@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="d-flex justify">
+    <nav class="d-flex justify" role="navigation">
         <div class="nav-main d-flex align-cen">
             <div class="logo d-flex">
                 <img src="./logo.svg" alt=" gym-hit">
@@ -26,33 +26,43 @@
                                 <li class="drop-li">Fitness Home</li>
                                 <li class="drop-li">Boxing Home</li>
                                 <li class="drop-li">Martial Art</li>
-                                <li class="drop-li">Yoga</li>
-                                <li class="drop-li">Trainer Home</li>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-list d-flex align-cen"> <a href="/">PAGES</a>  <i class="fas fa-chevron-down"></i> </li>
+                    <li class="nav-list d-flex align-cen"> <a href="/">PAGES</a>  <i class="fas fa-chevron-down"></i> 
+                        <div class="drop-down">
+                            <ul class="drop-ul">
+                                <li class="drop-li">About us</li>
+                                <li class="drop-li">Our team</li>
+                                <li class="drop-li">Pricing plans </li>
+                                <li class="drop-li">Workout</li>
+                                <li class="drop-li">BMI calculator</li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="nav-list d-flex align-cen"> <a href="/">PORTFOLIO</a>  <i class="fas fa-chevron-down"></i> </li>
                     <li class="nav-list d-flex align-cen"> <a href="/">BLOG</a>  <i class="fas fa-chevron-down"></i> </li>
                     <li class="nav-list d-flex align-cen"> <a href="/">SHOP</a>  <i class="fas fa-chevron-down"></i> </li>
                     <li class="nav-list d-flex align-cen"> <a href="/">EVENTS</a>  <i class="fas fa-chevron-down"></i> </li>        
                 </ul>
             </div>
-            
-            <div class="cart">
-                <a href="">
-                <i class="fas fa-shopping-cart"> </i>
-                <span class="cart-count">0</span>
-                </a>
-            </div>
+            <div class="search-bar">
+                <div class="cart">
+                    <a href="">
+                    <i class="fas fa-shopping-cart"> </i>
+                    <span class="cart-count">0</span>
+                    </a>
+                </div>
 
-            <div class="search">
-               <a href="/"><i class="fa fa-search"></i></a> 
-            </div>
+            
+                <div class="search">
+                <a href="/"><i class="fa fa-search"></i></a> 
+                </div>
 
                 <div class="bar">
                     <i class="fas fa-bars"></i>
                 </div>
+            </div>
 
         </div>
     </nav>
