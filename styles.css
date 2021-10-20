@@ -39,7 +39,7 @@ nav {
     text-decoration: none;
     list-style: none;
     height: 100%;
-    position: relative;
+    /* position: relative; */
 
 }
 
@@ -55,16 +55,19 @@ nav {
     margin-right: 10px;  
 }
 
-.nav-list a:hover{
+.nav-list:hover a,
+.nav-list:focus a {
     color: #E31C25;
     transition: .3s ease-in-out;
-}
+}   
 
-.nav-list:focus-within .drop-down,
-.nav-list:hover .drop-down,
-.nav-list .drop-down:hover {
+/* .menu .nav-list:focus-within .drop-down ,
+.menu .nav-list:hover .drop-down ,
+.menu .nav-list .drop-down :hover{
     display: block;
-}
+} */
+
+/* .nav-list */
 
 .menu {
     width: 100%;
@@ -113,31 +116,50 @@ nav {
     color: grey;
 }
 
-.drop-ul {
+.submenu {
+    background: whitesmoke;
+    position: absolute;
+    top: 70px;
+    transition: all .3s ease;
+    width: 180px;
+}
+
+.submenu ul li {
     list-style: none;
+    padding: 0.5rem;
 }
 
-.drop-ul a {
+.submenu ul li:hover {
+    background: red;
+    color: #fff;
+}
+
+/* .drop-ul {
+    list-style: none;
+} */
+
+/* .drop-ul a {
     text-decoration: none;
-}
-.drop-li {
+} */
+/* .drop-li {
     padding: 7px 15px;
-}
+} */
 
-.drop-down {
+/* .drop-down {
     position: absolute;
     top: 72px;
     width: 200px;
     background: #f3efef;
     display: none;
     transition: all 0.5s ease;
-}
-
-.drop-down .drop-li:hover {
+} */
+/* 
+.drop-down .drop-li:hover, 
+.drop-down .drop-li:focus a {
     background: #c61515;
     color: #fff;
+} */
 
-}
 .bar {
     background: #e31d26;
     font-size: 20px;
@@ -162,22 +184,25 @@ nav {
 @media (max-width:1000px){
     .menu {
         /* display: none; */
-    }
-
-    .menu ul {
-        flex-direction: column;
         position: absolute;
         background: #ebe7e7;
         top: 71px;
         width: 100%;
         left: 0;
+        height: initial;
+
     }
 
-    .menu ul li {
-        width: 100%;
-        padding: 0 3rem;
-        justify-content: space-between;
+    .menu .list {
+        flex-direction: column;
     }
+
+    .menu .list li {
+        width: 100%;
+        /* padding: 0 2rem; */
+        justify-content: space-between;
+        margin-right: auto;
+     }
 
     .fa-chevron-down {
         color: #000;
@@ -186,6 +211,24 @@ nav {
 
     .menu ul li a {
         font-size: 17px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        padding: 20px 20px 16px;
+        align-items: center;
+        /* background: red; */
+        /* color: #fff; */
+    }
+
+    .nav-list:hover a,
+    .nav-list:focus a {
+        background: red;
+        color: #fff;
+    }
+    .
+
+    .menu ul li {
+        margin-right: auto;
     }
 
     .nav-main {
@@ -201,10 +244,29 @@ nav {
 
 
     .nav-list {
-        margin-right: 1.1rem;
-        position: relative;
+        /* margin-right: 1.1rem;
+        position: relative; */
+        flex-flow: inherit;
+        margin-right: auto;
+    }
+
+     .nav-list a {
+         margin-right: 0;
+     }
+
+    /* .drop-down {
+        position: inherit;
+    } */
+
+    .submenu {
+         width: inherit;
     }
     
+
+    .sub-li {
+        list-style: none;
+        padding: 10px 30px;
+    }
 }
 
 
