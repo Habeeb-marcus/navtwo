@@ -80,6 +80,13 @@ nav {
     height: 100%;
 }
 
+
+.menu ul li:hover > .submenu,
+.menu ul li:focus-within > .submenu,
+.menu ul li .submenu:hover {
+    display: block;
+}
+
 .cart, .search {
     margin-left: 22px;
     width: 50px;
@@ -123,6 +130,7 @@ nav {
     top: 70px;
     transition: all .3s ease;
     width: 180px;
+    display: none;
 }
 
 .submenu ul li {
