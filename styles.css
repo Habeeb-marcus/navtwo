@@ -27,6 +27,7 @@
 
 nav {
     box-shadow: 1px 0 10px -5px #000;
+    transition: all 0.3s ease;
 }
 
 .nav-main {
@@ -183,7 +184,7 @@ nav {
 
 @media (max-width:1000px){
     .menu {
-        /* display: none; */
+        display: none;
         position: absolute;
         background: #ebe7e7;
         top: 71px;
@@ -191,6 +192,10 @@ nav {
         left: 0;
         height: initial;
 
+    }
+
+    .show{
+        display: block;
     }
 
     .menu .list {
@@ -225,7 +230,7 @@ nav {
         background: red;
         color: #fff;
     }
-    .
+    
 
     .menu ul li {
         margin-right: auto;
@@ -260,6 +265,7 @@ nav {
 
     .submenu {
          width: inherit;
+         top: 61px;
     }
     
 
@@ -273,5 +279,9 @@ nav {
 @media (max-width: 500px) {
     .cart, .search {
         display: none;
+    }
+
+    .logo img {
+        height: 2rem;
     }
 }
